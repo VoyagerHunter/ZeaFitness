@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/deep_blue</item>
+        <item name="colorAccent">@color/esmeralda</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+    <style name="BotonRedondeado" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/boton_redondeado</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="EstiloSpinner" parent="AppTheme">
+        <item name="android:backgroundTint">@color/esmeralda</item>
+        <item name="android:tint">@color/esmeralda</item>
+    </style>
+
+
+</resources>

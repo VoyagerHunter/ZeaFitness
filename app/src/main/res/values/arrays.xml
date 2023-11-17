@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>Bajar de peso</item>
+        <item>Subir de peso</item>
+        <item>Mejorar resistencia</item>
+        <item>Aumentar fuerza</item>
+        <item>Aumentar velocidad</item>
+    </string-array>
+</resources>

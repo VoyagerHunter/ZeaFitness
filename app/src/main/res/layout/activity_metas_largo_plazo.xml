@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_blue"
+    android:orientation="vertical"
+    tools:context=".MetasLargoPlazo">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#008000"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/notificaciones"
+                    android:layout_width="80dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="Notificaciones"
+                    android:onClick="irNotificaciones"
+                    android:padding="20dp"
+                    android:textColor="@android:color/transparent" />
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="43dp"
+                    android:layout_alignRight="@id/notificaciones"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="irNotificaciones"
+                    android:src="@drawable/notificacion" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.utils.widget.MotionLabel
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:text="Mi meta es" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:entries="@array/opciones"
+                android:text="Selecciona una opcion" />
+
+            <androidx.constraintlayout.utils.widget.MotionLabel
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:text="Fecha en que quiero lograrlo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@id/btnSelectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/boton_redondeado"
+                    android:padding="10sp"
+                    android:text="Calendario"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/etFecha"
+                    style="EstiloSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:ems="10"
+                    android:hint="Fecha"
+                    android:inputType="text"
+                    android:textColorHighlight="@color/esmeralda" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSaveGoal"
+                style="@style/BotonRedondeado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:text="Guardar"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

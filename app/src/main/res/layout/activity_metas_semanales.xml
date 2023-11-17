@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/width"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_blue"
+
+    android:orientation="vertical">
+
+    <!-- Selector de días de la semana -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#008000"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:contentDescription="menuDesplegable"
+                    android:onClick="desplegarMenu"
+                    android:scaleType="centerInside"
+                    android:scrollbarSize="20dp"
+                    android:src="@drawable/menu" />
+
+                <Button
+                    android:id="@+id/notificaciones"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:onClick="irNotificaciones" />
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_alignRight="@id/notificaciones"
+                    android:onClick="irNotificaciones"
+                    android:src="@drawable/notificacion" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Elige 3 días de la semana:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+            <CheckBox
+                android:id="@+id/checkboxLunes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:shadowColor="#FFFFFF"
+                android:text="Lunes"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                android:buttonTint="@color/white"
+                />
+
+            <CheckBox
+                android:id="@+id/checkboxMartes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:shadowColor="#FFFFFF"
+                android:text="Martes"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:buttonTint="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxLunes" />
+
+            <CheckBox
+                android:id="@+id/checkboxMiercoles"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:shadowColor="#FFFFFF"
+                android:text="Miercoles"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:buttonTint="@color/white"
+
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxMartes" />
+
+            <CheckBox
+                android:id="@+id/checkboxJueves"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:shadowColor="#FFFFFF"
+                android:text="Jueves"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxMiercoles" />
+
+            <CheckBox
+                android:id="@+id/checkboxViernes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:shadowColor="#FFFFFF"
+                android:buttonTint="@color/white"
+
+                android:text="Viernes"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxJueves" />
+
+            <CheckBox
+                android:id="@+id/checkboxSabado"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:shadowColor="#FFFFFF"
+                android:buttonTint="@color/white"
+
+                android:text="Sabado"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxViernes" />
+
+            <CheckBox
+                android:id="@+id/checkboxDomingo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:shadowColor="#FFFFFF"
+                android:buttonTint="@color/white"
+                android:text="Domingo"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxSabado" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Elige el tipo de entrenamiento:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxDomingo" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <RadioButton
+                    android:id="@+id/radioCardio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:buttonTint="@color/white"
+
+                    android:text="Cardio"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioFuncional"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+
+
+                    android:buttonTint="@color/white"
+                    android:text="Funcional"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioResistencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:buttonTint="@color/white"
+                    android:text="Resistencia"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSaveGoals"
+                style="@style/BotonRedondeado"
+                android:layout_width="170dp"
+                android:layout_height="59dp"
+                android:layout_margin="20dp"
+                android:text="Guardar"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="671dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- Agrega el resto de los CheckBox para los otros días de la semana -->
+
+    <!-- Selector de tipo de entrenamiento -->
+
+    <!-- Botón para confirmar la selección -->
+</LinearLayout>
+

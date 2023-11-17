@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "434325365423",
+    "project_id": "zea-fitness",
+    "storage_bucket": "zea-fitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434325365423:android:1e90e666c14113fd802a5a",
+        "android_client_info": {
+          "package_name": "com.example.zea_fitness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1AN90uSeNdjebWftxdZ0FAvvZIYRRdYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434325365423:android:0de79c79d669c35f802a5a",
+        "android_client_info": {
+          "package_name": "firebase.app.zea_fitness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1AN90uSeNdjebWftxdZ0FAvvZIYRRdYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

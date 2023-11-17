@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Zea-Fitness</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="registro_de_entrenamientos">Registro de entrenamientos</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="duraci_n_en_minutos">Duración en minutos</string>
+    <string name="intensidad">Intensidad</string>
+    <string name="registro_de_entrenamientos2">Registro de entrenamientos</string>
+    <string name="fecha_de_entrenamiento_dd_mm_aaaa">Fecha de entrenamiento (dd/mm/aaaa)</string>
+    <string name="tipo_de_entrenamiento">Tipo de entrenamiento</string>
+    <string name="guardar">Guardar</string>
+    <string name="mins">mins:</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="home">home</string>
+    <string name="seleccionar_fecha">Seleccionar Fecha</string>
+</resources>
